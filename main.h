@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 #include <stdarg.h>
 #include <stdio.h>
@@ -20,23 +20,23 @@
 #define CONVERT_UNSIGNED	2
 
 /**
-* struct parameters - parameters struct
-*
-* @unsign: flag if unsigned value
-*
-* @plus_flag: on if plus_flag specified
-* @space_flag: on if hashtag_flag specified
-* @hashtag_flag: on if _flag specified
-* @zero_flag: on if _flag specified
-* @minus_flag: on if _flag specified
-*
-* @width: field width specified
-* @precision: field precision specified
-*
-* @h_modifier: on if h_modifier is specified
-* @l_modifier: on if l_modifier is specified
-*
-*/
+ * struct parameters - parameters struct
+ *
+ * @unsign: flag if unsigned value
+ *
+ * @plus_flag: on if plus_flag specified
+ * @space_flag: on if hashtag_flag specified
+ * @hashtag_flag: on if _flag specified
+ * @zero_flag: on if _flag specified
+ * @minus_flag: on if _flag specified
+ *
+ * @width: field width specified
+ * @precision: field precision specified
+ *
+ * @h_modifier: on if h_modifier is specified
+ * @l_modifier: on if l_modifier is specified
+ *
+ */
 
 typedef struct parameters
 {
@@ -56,11 +56,11 @@ typedef struct parameters
 } params_t;
 
 /**
-* struct specifier - Struct token
-*
-* @specifier: format token
-* @f: The function associated
-*/
+ * struct specifier - Struct token
+ *
+ * @specifier: format token
+ * @f: The function associated
+ */
 typedef struct specifier
 {
 	char *specifier;
@@ -117,4 +117,4 @@ char *get_precision(char *p, params_t *params, va_list ap);
 /* _prinf.c module */
 int _printf(const char *format, ...);
 
-#endif /*MAIN_H*/
+#endif /*_MAIN_H_*/
