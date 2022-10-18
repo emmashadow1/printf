@@ -97,8 +97,9 @@ int print_number_right_shift(char *str, params_t *params)
 		n += _putchar(' ');
 	n += _puts(str);
 	return (n);
+}
 
-	/**
+/**
  * print_number_left_shift - prints a number with options
  * @str: the base number as a string
  * @params: the parameter struct
